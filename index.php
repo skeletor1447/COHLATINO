@@ -236,11 +236,17 @@ try {
                             <div class="container">
                                 <a href="" ng-click="equipos.ShowProximosEncuentros()"><h1><strong class="ritekhed-color">Company Of Heroes 1</strong> Latinoamérica</h1></a>
 
+
+                                <div class="row ritekhed-iframe" ng-show="equipos.ShowEncuentrosBloqueado">
+                                    
+                                    <iframe src="http://free.timeanddate.com/countdown/i7eucaba/n227/cf111/cm0/cu4/ct0/cs1/ca0/co1/cr0/ss0/cac000/cpc000/pc66c/tc66c/fs140/szw320/szh135/tatCierre%20de%20registro%20de%20equipos/tac000/tpc000/iso2020-08-16T23:59:59" allowTransparency="true" frameborder="0" width="1000" height="135" aling="center"></iframe>
+                                        
+                                </div>
                                
 
-                                <div class="row" ng-show="equipos.ShowEncuentros">
+                                <div class="row">
                                     <h2><strong class="ritekhed-color">Torneo 2 vs 2</strong></h2>
-                                    <div class="col-md-6">
+                                    <div class="col-md-6" ng-show="equipos.ShowEncuentros && !equipos.ShowEncuentrosBloqueado">
                                         <div class="ritekhed-classic-heading">
                                             <h2>Próximo encuentro</h2>
                                         </div>
@@ -279,7 +285,7 @@ try {
                                         </div>
                                     </div>
 
-                                    <div class="col-md-6">
+                                    <div class="col-md-6" ng-show="equipos.ShowEncuentros && !equipos.ShowEncuentrosBloqueado">
                                         <div class="ritekhed-classic-heading">
                                             <h2>Próximo encuentro</h2>
                                         </div>
@@ -311,10 +317,10 @@ try {
         <!-- Banner -->
 
         <!-- Content -->
-        <div class="ritekhed-main-content">
+        <div class="ritekhed-main-content" >
 
             <!-- Main Section -->
-            <div class="ritekhed-main-section ritekhed-fixture-table-slider-full">
+            <div class="ritekhed-main-section ritekhed-fixture-table-slider-full" ng-show="false">
                 <div class="container-fluid">
                     <div class="row">
                         
@@ -507,8 +513,203 @@ try {
             </div>
             <!-- Main Section -->
 
-            <!-- Main Section -->
+            
+            <!-- Seccion de equipos registrados-->
             <div class="ritekhed-main-section">
+                <div class="container">
+                    <div class="row">
+                        
+                        
+                        <!-- Ranking Table -->
+                        <div class="col-md-6">
+                            <div class="ritekhed-match-fixture ritekhed-team-ranking">
+                                <div class="ritekhed-classic-heading">
+                                    <h2>Equipos registrados</h2>
+                                </div>
+                                <table class="ritekhed-client-detail">
+                                    <tbody><tr>
+                                        <th>Equipo</th>
+                                        <th>Liga</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>1</span>
+                                            <figure><img src="./noimagelogo.png" alt=""></figure>
+                                            <div class="player-stats-text">
+                                                <h6>LETHAL FUSION</h6>
+                                                <span>Raptor - Muerte</span>
+                                            </div>
+                                        </td>
+                                        <td>PRO</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <span>2</span>
+                                            <figure><img src="./noimagelogo.png" alt=""></figure>
+                                            <div class="player-stats-text">
+                                                <h6>PzKpfw</h6>
+                                                <span>JPeiper - Leibstandarte</span>
+                                            </div>
+                                        </td>
+                                        <td>PRO</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <span>3</span>
+                                            <figure><img src="./noimagelogo.png" alt=""></figure>
+                                            <div class="player-stats-text">
+                                                <h6>Quita maridos scuad</h6>
+                                                <span>Yaja - Arepa</span>
+                                            </div>
+                                        </td>
+                                        <td>INTERMEDIA</td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>
+                                            <span>4</span>
+                                            <figure><img src="./noimagelogo.png" alt=""></figure>
+                                            <div class="player-stats-text">
+                                                <h6>Mexican Power</h6>
+                                                <span>Skeletor1447 - Ayax</span>
+                                            </div>
+                                        </td>
+                                        <td>INTERMEDIA</td>
+                                    </tr>
+                                  
+                                </tbody></table>
+                            </div>
+                        </div>
+                        <!-- Ranking Table -->
+
+                          <!-- Ranking Table -->
+                          <div class="col-md-6">
+                            <div class="ritekhed-match-fixture ritekhed-team-ranking">
+                                <div class="ritekhed-classic-heading">
+                                    <h2>Equipos por confirmar nombre de equipo</h2>
+                                </div>
+                                <table class="ritekhed-client-detail">
+                                    <tbody><tr>
+                                        <th>Jugadores</th>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>1</span>
+                                            <figure><img src="./noimagelogo.png" alt=""></figure>
+                                            <div class="player-stats-text">
+                                                <h6>Sin nombre</h6>
+                                                <span>Willyou - BO$$</span>
+                                            </div>
+                                        </td>
+                                        
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <span>2</span>
+                                            <figure><img src="./noimagelogo.png" alt=""></figure>
+                                            <div class="player-stats-text">
+                                                <h6>Sin nombre</h6>
+                                                <span>Kaput - Yankees Kaput</span>
+                                            </div>
+                                        </td>
+                                        
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>
+                                            <span>2</span>
+                                            <figure><img src="./noimagelogo.png" alt=""></figure>
+                                            <div class="player-stats-text">
+                                                <h6>Sin nombre</h6>
+                                                <span>Liberated-Dace - Freddy</span>
+                                            </div>
+                                        </td>
+                                        
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <span>3</span>
+                                            <figure><img src="./noimagelogo.png" alt=""></figure>
+                                            <div class="player-stats-text">
+                                                <h6>Sin nombre</h6>
+                                                <span>Marcos - Dany</span>
+                                            </div>
+                                        </td>
+                                        
+                                    </tr>
+
+                                    
+                                    <tr>
+                                        <td>
+                                            <span>4</span>
+                                            <figure><img src="./noimagelogo.png" alt=""></figure>
+                                            <div class="player-stats-text">
+                                                <h6>Sin nombre</h6>
+                                                <span>Facha - Sumadre</span>
+                                            </div>
+                                        </td>
+                                        
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <span>5</span>
+                                            <figure><img src="./noimagelogo.png" alt=""></figure>
+                                            <div class="player-stats-text">
+                                                <h6>Sin nombre</h6>
+                                                <span>Gatienso - Marcos</span>
+                                            </div>
+                                        </td>
+                                        
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <span>6</span>
+                                            <figure><img src="./noimagelogo.png" alt=""></figure>
+                                            <div class="player-stats-text">
+                                                <h6>Sin nombre</h6>
+                                                <span>Edo - Danky</span>
+                                            </div>
+                                        </td>
+                                        
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>
+                                            <span>7</span>
+                                            <figure><img src="./noimagelogo.png" alt=""></figure>
+                                            <div class="player-stats-text">
+                                                <h6>Sin nombre</h6>
+                                                <span>*Hernán* - Coronel74</span>
+                                            </div>
+                                        </td>
+                                        
+                                    </tr>
+                                
+                                
+                                </tbody></table>
+                            </div>
+                        </div>
+                        <!-- Ranking Table -->
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- Main Section -->
+
+         
+
+            <!-- Main Section -->
+            <div class="ritekhed-main-section" ng-show="false">
                 <div class="container">
                     <div class="row">
                         
@@ -740,7 +941,7 @@ try {
          
 
             <!-- Main Section -->
-            <div class="ritekhed-main-section">
+            <div class="ritekhed-main-section" ng-show="false">
                 <div class="container">
                     <div class="row">
                         

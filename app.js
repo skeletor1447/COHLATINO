@@ -13,6 +13,8 @@ app.controller("controlador",function($scope){
 
     equipos.ShowEncuentros = true;
 
+    equipos.ShowEncuentrosBloqueado = true;
+
     equipos.ShowProximosEncuentros = function()
     {
         equipos.ShowEncuentros = !equipos.ShowEncuentros;
