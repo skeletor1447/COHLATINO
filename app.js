@@ -24,4 +24,14 @@ app.controller("controlador",function($scope){
     {
         window.location.href = "http://www.w3schools.com";
     }
+
+    equipos.emblema = "";
+    equipos.equipo = "";
+
+    equipos.AbrirEmblema = function(equipo, emblema)
+    {
+        
+        equipos.emblema = emblema;
+        equipos.equipo = equipo;
+    }
 });

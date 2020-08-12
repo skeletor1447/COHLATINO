@@ -567,11 +567,15 @@ try {
                                         <td>INTERMEDIA</td>
                                     </tr>
 
+  
+
 
                                     <tr>
                                         <td>
                                             <span>4</span>
-                                            <figure><img src="./noimagelogo.png" alt=""></figure>
+                                            <figure>
+                                                <a href="javascript;" data-toggle="modal" data-target="#exampleModal"> <img src="emblema/torneo1/mexicanpower.png" alt="" ng-click="equipos.AbrirEmblema('Mexican Power','emblema/torneo1/mexicanpower.png')"></a>  
+                                            </figure>
                                             <div class="player-stats-text">
                                                 <h6>Mexican Power</h6>
                                                 <span>Skeletor1447 - Ayax</span>
@@ -1046,7 +1050,28 @@ try {
         <!-- Footer -->
     </div>
 
-  
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">{{equipos.equipo}}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="{{equipos.emblema}}">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
     <!-- jQuery -->
     <script src="jquery.js"></script>
