@@ -583,6 +583,20 @@ try {
                                         </td>
                                         <td>INTERMEDIA</td>
                                     </tr>
+
+                                    <tr>
+                                        <td>
+                                            <span>5</span>
+                                            <figure>
+                                                <a href="javascript;" data-toggle="modal" data-target="#exampleModal"> <img src="emblema/torneo1/thedragoonsduty.jpg" alt="" ng-click="equipos.AbrirEmblema('Mexican Power','emblema/torneo1/thedragoonsduty.jpg')"></a>  
+                                            </figure>
+                                            <div class="player-stats-text">
+                                                <h6>The Dragoons Duty</h6>
+                                                <span>Rojoss - Hansolo</span>
+                                            </div>
+                                        </td>
+                                        <td>INTERMEDIA</td>
+                                    </tr>
                                   
                                 </tbody></table>
                             </div>
